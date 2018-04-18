@@ -1,0 +1,34 @@
+version: '3.3'
+
+services:
+   db:
+     image: mysql:5.7
+     volumes:
+       - dbdata:/var/lib/mysql
+     restart: always
+     environment:
+       MYSQL_ROOT_PASSWORD: somewordpress
+       MYSQL_DATABASE: wordpress
+       MYSQL_USER: wordpress
+       MYSQL_PASSWORD: wordpress
+
+   wordpress:
+     depends_on:
+       - db
+     image: debtcollective/wordpress:latest
+     ports:
+       - "8000:80"
+     restart: always
+     environment:
+       WORDPRESS_DB_HOST: db:3306
+       WORDPRESS_DB_USER: wordpress
+       WORDPRESS_DB_PASSWORD: wordpress
+       WORDPRESS_SMTP_HOST: smtp.mailgun.org
+       WORDPRESS_SMTP_PORT: 587
+       WORDPRESS_SMTP_USERNAME: username@mailgun.org
+       WORDPRESS_SMTP_PASSWORD: mailgunpassword
+       WORDPRESS_SMTP_FROM: wordpress@mailgun.org
+       WORDPRESS_SMTP_FROM_NAME: Wordpress
+
+volumes:
+    dbdata:
