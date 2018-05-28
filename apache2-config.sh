@@ -19,6 +19,3 @@ function mail_smtp( \$phpmailer ) {
   \$phpmailer->FromName = getenv('WORDPRESS_SMTP_FROM_NAME');
 }
 EOF
-
-# Run apache2
-exec "apache2-foreground"

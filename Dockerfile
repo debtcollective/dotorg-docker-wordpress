@@ -13,4 +13,4 @@ COPY [".htaccess", "/usr/src/wordpress"]
 
 # Setup SMTP running config.sh
 COPY ["apache2-config.sh", "/usr/local/bin/"]
-CMD ["apache2-config.sh"]
+RUN [ "/usr/local/bin/apache2-config.sh" ]
