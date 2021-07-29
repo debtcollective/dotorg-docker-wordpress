@@ -12,5 +12,5 @@ RUN chmod +x /bin/wp-cli.phar /bin/wp
 COPY [".htaccess", "/usr/src/wordpress"]
 
 # Setup SMTP running config.sh
-COPY ["apache2-config.sh", "/usr/local/bin/"]
-RUN [ "/usr/local/bin/apache2-config.sh" ]
+# COPY ["apache2-config.sh", "/usr/local/bin/"]
+# RUN [ "/usr/local/bin/apache2-config.sh" ]
