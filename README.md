@@ -6,3 +6,5 @@ Our own flavor of Wordpress.
 `docker-compose up`
 
 then in another terminal run: `bash clone-repos-local.sh`
+
+navigate to: http://localhost:8000/
