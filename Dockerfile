@@ -14,5 +14,5 @@ RUN php composer-setup.php --install-dir=/usr/local/bin --filename=composer
 RUN composer self-update 1.10.22
 
 # Setup theme and plugins
-COPY clone-repos.sh ./
-RUN bash ./clone-repos.sh
+COPY clone-repos.sh /
+RUN bash /clone-repos.sh
