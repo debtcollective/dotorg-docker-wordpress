@@ -1,2 +1,2 @@
 build:
-	docker build -t debtcollective/wordpress:latest .
+	docker build -t debtbot/wordpress-cli:latest .
