@@ -2,9 +2,7 @@
 
 Our own flavor of Wordpress.
 
-
+## Run Locally
 `docker-compose up`
-`docker-compose down`
 
-
-`bash clone-repos-local.sh`
+then in another terminal run: `bash clone-repos-local.sh`
