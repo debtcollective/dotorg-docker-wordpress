@@ -2,6 +2,9 @@
 
 Our own flavor of Wordpress.
 
+## Setup
+Rename `.env-example` to `.env`
+
 ## Run Locally
 `docker-compose up`
 
