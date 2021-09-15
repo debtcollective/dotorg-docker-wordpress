@@ -1,40 +1,56 @@
 version: '3.3'
 
 services:
-   db:
-     image: mysql:5.7
-     volumes:
-       - ./wp-data:/docker-entrypoint-initdb.d
-       - dbdata:/var/lib/mysql
-     restart: always
-     environment:
-       MYSQL_ROOT_PASSWORD: "${DB_ROOT_PASSWORD}"
-       MYSQL_DATABASE: "${DB_NAME}"
-       MYSQL_USER: wordpress
-       MYSQL_PASSWORD: "${DB_USER_PASSWORD}"
-
-   wordpress:
-     depends_on:
-       - db
-     image: debtbot/wordpress-cli:latest
-     ports:
-       - "8000:80"
-     restart: always
-     volumes:
-       - ./config/php.conf.ini:/usr/local/etc/php/conf.d/conf.ini
-       - ./wp-app:/var/www/html
-     environment:
-       WORDPRESS_DB_HOST: db:3306
-       WORDPRESS_DB_NAME: "${DB_NAME}"
-       WORDPRESS_DB_USER: wordpress
-       WORDPRESS_DB_PASSWORD: "${DB_USER_PASSWORD}"
-       WORDPRESS_SMTP_HOST: smtp.mailgun.org
-       WORDPRESS_SMTP_PORT: 587
-       WORDPRESS_SMTP_USERNAME: username@mailgun.org
-       WORDPRESS_SMTP_PASSWORD: mailgunpassword
-       WORDPRESS_SMTP_FROM: wordpress@mailgun.org
-       WORDPRESS_SMTP_FROM_NAME: Wordpress
-       ACF_PRO_KEY: "${ACF_PRO_KEY}"
-
+  db:
+    image: mysql:5.7
+    volumes:
+      - ./wp-data:/docker-entrypoint-initdb.d
+      - dbdata:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: "${DB_ROOT_PASSWORD}"
+      MYSQL_DATABASE: "${DB_NAME}"
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: "${DB_USER_PASSWORD}"
+    networks:
+      - wpsite
+  phpmyadmin:
+    depends_on:
+      - db
+    image: phpmyadmin/phpmyadmin
+    restart: always
+    ports:
+      - '8080:80'
+    environment:
+      PMA_HOST: db
+      MYSQL_ROOT_PASSWORD: "${DB_USER_PASSWORD}"
+    networks:
+      - wpsite
+  wordpress:
+    depends_on:
+      - db
+    image: debtbot/wordpress-cli:latest
+    ports:
+      - "8000:80"
+    restart: always
+    volumes:
+      - ./config/php.conf.ini:/usr/local/etc/php/conf.d/conf.ini
+      - ./wp-app:/var/www/html
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_NAME: "${DB_NAME}"
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: "${DB_USER_PASSWORD}"
+      WORDPRESS_SMTP_HOST: smtp.mailgun.org
+      WORDPRESS_SMTP_PORT: 587
+      WORDPRESS_SMTP_USERNAME: username@mailgun.org
+      WORDPRESS_SMTP_PASSWORD: mailgunpassword
+      WORDPRESS_SMTP_FROM: wordpress@mailgun.org
+      WORDPRESS_SMTP_FROM_NAME: Wordpress
+      ACF_PRO_KEY: "${ACF_PRO_KEY}"
+    networks:
+      - wpsite
+networks:
+  wpsite:
 volumes:
     dbdata:
