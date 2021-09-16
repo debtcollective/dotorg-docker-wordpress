@@ -11,3 +11,6 @@ Rename `env.example` to `.env`
 then in another terminal run: `bash clone-repos-local.sh`
 
 navigate to: http://localhost:8000/
+For phpMyAdmin:
+navigate to: http://localhost:8080/
+login with username `root` and password `<DB_ROOT_PASSWORD>` env variable
