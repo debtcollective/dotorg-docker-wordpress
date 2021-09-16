@@ -1,3 +1,4 @@
 wp-app/
 .env
 .DS_Store
+wp-data/
