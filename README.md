@@ -5,6 +5,18 @@ Our own flavor of Wordpress.
 ## Setup
 Rename `env.example` to `.env`
 
+**Set Environment Variables**
+Our setup requires an SSH Tunnel. In order to pull DB from a remote server, set the following variables to tunnel into the server and dump the remote DB.
+
+- SSH_KEY_PATH: Path to SSH identity file for server logging
+- SSH_USER: User to connect to server
+- IP_ADDRESS: IP address of the remote server
+- PORT: Remote server port
+- MYSQL_HOST: Hostname for MySQL
+- MYSQL_USER: User for MySQL
+- MYSQL_PASS: Password for Mysql User 
+- MYSQL_DB: MySQL Database to connect to
+
 ## Pull latest DB
 
 `brew install mysql@5.7`
