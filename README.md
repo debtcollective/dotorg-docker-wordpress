@@ -1,6 +1,6 @@
-# docker-wordpress
+# Dotorg Docker
 
-Our own flavor of Wordpress.
+Our own flavor of Wordpress for dotorg.
 
 ## Setup
 Rename `env.example` to `.env`
