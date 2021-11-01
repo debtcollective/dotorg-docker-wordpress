@@ -5,17 +5,23 @@ Our own flavor of Wordpress for dotorg.
 ## Setup
 Rename `env.example` to `.env`
 
-**Set Environment Variables**
-Our setup requires an SSH Tunnel. In order to pull DB from a remote server, set the following variables to tunnel into the server and dump the remote DB.
+**Environment Variables**
+The easiest way to run the app is by using [Doppler](https://www.doppler.com/). Ask to be added to the project.
 
-- SSH_KEY_PATH: Path to SSH identity file for server logging
-- SSH_USER: User to connect to server
-- IP_ADDRESS: IP address of the remote server
-- PORT: Remote server port
-- MYSQL_HOST: Hostname for MySQL
-- MYSQL_USER: User for MySQL
-- MYSQL_PASS: Password for Mysql User 
-- MYSQL_DB: MySQL Database to connect to
+You can install it by running `brew install dopplerhq/cli/doppler`. You can can check the [Doppler docs here](https://docs.doppler.com/docs/enclave-installation#local-development), but below is the gist of commands you need to run.
+
+```bash
+doppler login
+doppler setup
+```
+
+To use Doppler to inject environment variables, prepend `doppler run` to commands. 
+
+```bash
+doppler run docker-compose up
+```
+
+We also support [Dotenv](#dotenv) to configure environment variables. But you will need to supply all the secrets manually.
 
 ## Pull latest DB
 
@@ -24,7 +30,9 @@ Our setup requires an SSH Tunnel. In order to pull DB from a remote server, set 
 run the following command if brew doesn't add this to your path and mysqldump isn't found. Ensure the version numbers are the same.
 `export PATH=/usr/local/Cellar/mysql@5.7/5.7.35/bin:$PATH`
 
-`./export.sh`
+You will need to have an SSH key in order to connect to the database and set the path of the environment variable SSH_KEY_PATH to the proper location.
+
+`./import-db.sh`
 
 ## Run Locally
 
@@ -45,7 +53,7 @@ Two new folders will be created.
 * `wp-app` – the location of your WordPress application
 
 
-then in another terminal run: `bash clone-repos-local.sh`
+then in another terminal run: `bash setup.sh`
 
 
 The containers are now built and running. You should be able to access the WordPress installation with the configured IP in the browser address. By default it is `http://localhost:8000`.
