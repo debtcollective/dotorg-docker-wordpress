@@ -86,7 +86,7 @@ To remove all the container volumes use:
 
 ```
 docker volume rm dbdata
-docker volume rm docker-wordpress_dbdata
+docker volume rm dotorg-docker-wordpress_dbdata
 ```
 
 ## phpMyAdmin
