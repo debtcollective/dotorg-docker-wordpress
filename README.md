@@ -3,7 +3,6 @@
 Our own flavor of Wordpress for dotorg.
 
 ## Setup
-Rename `env.example` to `.env`
 
 **Environment Variables**
 The easiest way to run the app is by using [Doppler](https://www.doppler.com/). Ask to be added to the project.
@@ -22,6 +21,8 @@ doppler run docker-compose up
 ```
 
 We also support [Dotenv](#dotenv) to configure environment variables. But you will need to supply all the secrets manually.
+
+Rename `env.example` to `.env` and set the following variables.
 
 - SSH_KEY_PATH: Path to SSH identity file for server logging
 - SSH_USER: User to connect to server
