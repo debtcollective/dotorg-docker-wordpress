@@ -37,6 +37,16 @@ Rename `env.example` to `.env` and set the following variables.
 
 ## Pull latest DB
 
+`brew install mysql@5.7`
+
+run the following command if brew doesn't add this to your path and mysqldump isn't found. Ensure the version numbers are the same.
+
+`brew info mysql@5.7`
+
+Then export the path as below from the mysql path output from brew info.
+
+`export PATH=/usr/local/Cellar/mysql@5.7/5.7.35/bin:$PATH`
+
 You will need to have an SSH key in order to connect to the database and set the path of the environment variable SSH_KEY_PATH to the proper location. If you are using doppler set the staging key path to `~/.ssh/dc_aws_test` and production key path to `~/.ssh/dc_aws_prod`
 
 This command will also be run in the initial `setup.sh` script but can be run separately to update the database:
