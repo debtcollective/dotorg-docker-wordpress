@@ -54,6 +54,40 @@
         {
             "type": "package",
             "package": {
+                "name": "debtcollective/dotorg-site-functionality",
+                "version": "dev-main",
+                "type": "wordpress-plugin",
+                "dist": {
+                    "type": "zip",
+                    "url": "https://github.com/debtcollective/dotorg-site-functionality/archive/refs/heads/main.zip"
+                },
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:debtcollective/dotorg-site-functionality.git",
+                    "reference": "main"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "debtcollective/dotorg-theme",
+                "version": "dev-main",
+                "type": "wordpress-theme",
+                "dist": {
+                    "type": "zip",
+                    "url": "https://github.com/debtcollective/dotorg-theme/archive/refs/heads/main.zip"
+                },
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:debtcollective/dotorg-theme.git",
+                    "reference": "main"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
                 "name": "scossar/wp-discourse-shortcodes",
                 "version": "dev-master",
                 "type": "wordpress-plugin",
@@ -73,15 +107,21 @@
         "advanced-custom-fields/advanced-custom-fields-pro": "^5.10.2",
         "wpackagist-plugin/codepress-admin-columns":"^4.3.2",
         "wpackagist-plugin/flexy-breadcrumb":"1.1.4",
+        "wpackagist-plugin/contact-form-7":"^5.5.2",
         "wpackagist-plugin/getwid":"^1.7.3",
+        "wpackagist-plugin/members":"^3.1.5",
         "wpackagist-plugin/page-links-to":"^3.3.5",
+        "wpackagist-plugin/reusable-blocks-extended":"^0.8",
         "wpackagist-plugin/simple-social-share-block":"1.0.0",
         "wpackagist-plugin/wp-discourse":"^2.3.0",
         "scossar/wp-discourse-shortcodes": "dev-master",
         "wpackagist-plugin/wp-rest-api-v2-menus":"^0.10",
         "wpackagist-plugin/yikes-inc-easy-mailchimp-extender":"^6.8.5",
         "wpackagist-plugin/amazon-s3-and-cloudfront":"^2.5.5",
-        "debtcollective/wp-action-network-events": "dev-main"
+        "debtcollective/wp-action-network-events": "dev-main",
+        "debtcollective/dotorg-site-functionality": "dev-main",
+        "debtcollective/dotorg-theme": "dev-main",
+        "wpackagist-plugin/wp-user-avatars":"^1.4.1"
     },
     "extra": {
         "installer-paths": {
