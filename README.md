@@ -13,7 +13,7 @@ You can install it by running `brew install dopplerhq/cli/doppler`. You can can 
 doppler login
 doppler setup
 ```
-Select dotorg-docker as the environment.
+Select `dotorg-docker` as the environment.
 
 To use Doppler to inject environment variables, prepend `doppler run` to commands. 
 
@@ -113,7 +113,7 @@ Login with username `root` and password `<DB_ROOT_PASSWORD>` env variable
 
 Run `make` in the root directory to build a docker image using the makefile
 
-### Troubleshooting
+## Troubleshooting
 
 **if Error: bind [127.0.0.1]:3306: Address already in use**
 
