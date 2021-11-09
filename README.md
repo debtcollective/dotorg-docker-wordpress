@@ -7,12 +7,13 @@ Our own flavor of Wordpress for dotorg.
 **Environment Variables**
 The easiest way to run the app is by using [Doppler](https://www.doppler.com/). Ask to be added to the project.
 
-You can install it by running `brew install dopplerhq/cli/doppler`. You can can check the [Doppler docs here](https://docs.doppler.com/docs/enclave-installation#local-development), but below is the gist of commands you need to run.
+You can install it by running `brew install dopplerhq/cli/doppler`. You can can check the [Doppler docs here](https://docs.doppler.com/docs/enclave-installation#local-development), but below is the gist of commands you need to run. You will need to have access to the Debt Collective doppler to use our project.
 
 ```bash
 doppler login
 doppler setup
 ```
+Select `dotorg-docker` as the environment.
 
 To use Doppler to inject environment variables, prepend `doppler run` to commands. 
 
@@ -37,6 +38,8 @@ Rename `env.example` to `.env` and set the following variables.
 
 ## Pull latest DB
 
+### On Mac
+
 `brew install mysql@5.7`
 
 run the following command if brew doesn't add this to your path and mysqldump isn't found. Ensure the version numbers are the same.
@@ -52,6 +55,7 @@ You will need to have an SSH key in order to connect to the database and set the
 This command will also be run in the initial `setup.sh` script but can be run separately to update the database:
 
 `doppler run ./import-db.sh`
+
 
 ## Run Locally
 
@@ -108,4 +112,10 @@ Login with username `root` and password `<DB_ROOT_PASSWORD>` env variable
 ## Build Docker Image
 
 Run `make` in the root directory to build a docker image using the makefile
+
+## Troubleshooting
+
+**if Error: bind [127.0.0.1]:3306: Address already in use**
+
+Make sure to stop your local mysql service from running to allow port forwarding on port 3306.
 
