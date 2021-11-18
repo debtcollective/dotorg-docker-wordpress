@@ -121,7 +121,8 @@
         "debtcollective/wp-action-network-events": "dev-main",
         "debtcollective/dotorg-site-functionality": "dev-main",
         "debtcollective/dotorg-theme": "dev-main",
-        "wpackagist-plugin/wp-user-avatars":"^1.4.1"
+        "wpackagist-plugin/wp-user-avatars":"^1.4.1",
+        "vlucas/phpdotenv":"^5.4.0"
     },
     "extra": {
         "installer-paths": {
