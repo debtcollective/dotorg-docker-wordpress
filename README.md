@@ -56,7 +56,7 @@ Two new folders will be created.
 
 then in another terminal run: 
 
-`doppler run setup.sh`
+`doppler run ./setup.sh`
 
 
 The containers are now built and running. You should be able to access the WordPress installation with the configured IP in the browser address. By default it is `http://localhost:8000`.
@@ -101,7 +101,6 @@ You will need to have an SSH key in order to connect to the database and set the
 This command will also be run in the initial `setup.sh` script but can be run separately to update the database:
 
 `doppler run ./import-db.sh`
-
 
 ## phpMyAdmin
 
