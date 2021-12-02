@@ -3,6 +3,7 @@ version: '3.3'
 services:
   db:
     image: mysql:5.7
+    container_name: dotorg-docker-wordpress_db_1
     volumes:
       - ./wp-data:/docker-entrypoint-initdb.d
       - dbdata:/var/lib/mysql
@@ -30,6 +31,7 @@ services:
     depends_on:
       - db
     image: debtbot/wordpress-cli:latest
+    container_name: dotorg-docker-wordpress_wordpress_1
     ports:
       - "8000:80"
     restart: always
