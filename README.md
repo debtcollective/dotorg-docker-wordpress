@@ -35,7 +35,6 @@ Rename `env.example` to `.env` and set the following variables.
 - MYSQL_DB: MySQL Database to connect to
 - GITHUB_TOKEN: Github personal token to pull repos from composer
 
-
 ## Run Locally
 
 ### Starting containers
