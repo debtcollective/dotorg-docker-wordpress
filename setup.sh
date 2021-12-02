@@ -1,8 +1,8 @@
 #!/bin/bash
 # clone DC repos
-(cd ./wp-app/wp-content/themes/ && git clone https://github.com/debtcollective/dotorg-theme.git)
-(cd ./wp-app/wp-content/plugins/ && git clone https://github.com/debtcollective/dotorg-site-functionality.git)
-(cd ./wp-app/wp-content/plugins/ && git clone https://github.com/debtcollective/wp-action-network-events.git)
+# (cd ./wp-app/wp-content/themes/ && git clone https://github.com/debtcollective/dotorg-theme.git)
+# (cd ./wp-app/wp-content/plugins/ && git clone https://github.com/debtcollective/dotorg-site-functionality.git)
+# (cd ./wp-app/wp-content/plugins/ && git clone https://github.com/debtcollective/wp-action-network-events.git)
 cp composer.json wp-app/composer.json
 
 # set github token for composer to install the wp-action-network-events repo

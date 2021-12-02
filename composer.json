@@ -112,6 +112,7 @@
         "wpackagist-plugin/members":"^3.1.5",
         "wpackagist-plugin/page-links-to":"^3.3.5",
         "wpackagist-plugin/reusable-blocks-extended":"^0.8",
+        "wpackagist-plugin/redirection":"^5.1.3",
         "wpackagist-plugin/simple-social-share-block":"1.0.0",
         "wpackagist-plugin/wp-discourse":"^2.3.0",
         "scossar/wp-discourse-shortcodes": "dev-master",
@@ -121,7 +122,8 @@
         "debtcollective/wp-action-network-events": "dev-main",
         "debtcollective/dotorg-site-functionality": "dev-main",
         "debtcollective/dotorg-theme": "dev-main",
-        "wpackagist-plugin/wp-user-avatars":"^1.4.1"
+        "wpackagist-plugin/wp-user-avatars":"^1.4.1",
+        "vlucas/phpdotenv":"^5.4.0"
     },
     "extra": {
         "installer-paths": {
