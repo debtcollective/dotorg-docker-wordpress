@@ -106,7 +106,8 @@
     "require": {
         "advanced-custom-fields/advanced-custom-fields-pro": "^5.10.2",
         "wpackagist-plugin/codepress-admin-columns":"^4.3.2",
-        "wpackagist-plugin/flexy-breadcrumb":"1.1.4",
+        "wpackagist-plugin/flexy-breadcrumb":"^1.1.4",
+        "wpackagist-plugin/block-manager":"^1.2.2",
         "wpackagist-plugin/contact-form-7":"^5.5.2",
         "wpackagist-plugin/getwid":"^1.7.3",
         "wpackagist-plugin/members":"^3.1.5",
