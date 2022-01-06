@@ -101,6 +101,19 @@
                     "reference": "master"
                 }
             }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "debtcollective/block-visibility-pro",
+                "version": "dev-main",
+                "type": "wordpress-plugin",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:debtcollective/block-visibility-pro.git",
+                    "reference": "main"
+                }
+            }
         }
     ],
     "require": {
@@ -116,6 +129,8 @@
         "wpackagist-plugin/autodescription":"^4.2.2",
         "wpackagist-plugin/simple-social-share-block":"1.0.0",
         "wpackagist-plugin/wp-discourse":"^2.3.0",
+        "debtcollective/block-visibility-pro": "dev-main",
+        "wpackagist-plugin/block-visibility": "^2.3.0",
         "scossar/wp-discourse-shortcodes": "dev-master",
         "wpackagist-plugin/wp-rest-api-v2-menus":"^0.10",
         "wpackagist-plugin/yikes-inc-easy-mailchimp-extender":"^6.8.5",
