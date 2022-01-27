@@ -11,8 +11,8 @@
     ],
     "repositories": [
         {
-            "type":"composer",
-            "url":"https://wpackagist.org",
+            "type": "composer",
+            "url": "https://wpackagist.org",
             "only": [
                 "wpackagist-plugin/*",
                 "wpackagist-theme/*"
@@ -101,29 +101,50 @@
                     "reference": "master"
                 }
             }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "debtcollective/block-visibility-pro",
+                "version": "dev-main",
+                "type": "wordpress-plugin",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:debtcollective/block-visibility-pro.git",
+                    "reference": "main"
+                }
+            }
         }
     ],
     "require": {
         "advanced-custom-fields/advanced-custom-fields-pro": "^5.10.2",
-        "wpackagist-plugin/codepress-admin-columns":"^4.3.2",
-        "wpackagist-plugin/flexy-breadcrumb":"1.1.4",
-        "wpackagist-plugin/contact-form-7":"^5.5.2",
-        "wpackagist-plugin/getwid":"^1.7.3",
-        "wpackagist-plugin/members":"^3.1.5",
-        "wpackagist-plugin/page-links-to":"^3.3.5",
-        "wpackagist-plugin/reusable-blocks-extended":"^0.8",
-        "wpackagist-plugin/redirection":"^5.1.3",
-        "wpackagist-plugin/simple-social-share-block":"1.0.0",
-        "wpackagist-plugin/wp-discourse":"^2.3.0",
+        "wpackagist-plugin/codepress-admin-columns": "^4.3.2",
+        "wpackagist-plugin/flexy-breadcrumb": "^1.1.4",
+        "wpackagist-plugin/block-manager": "^1.2.2",
+        "debtcollective/block-visibility-pro": "dev-main",
+        "wpackagist-plugin/block-visibility": "^2.3.0",
+        "wpackagist-plugin/contact-form-7": "^5.5.2",
+        "wpackagist-plugin/contact-form-entries": "^1.2.7",
+        "wpackagist-plugin/members": "^3.1.5",
+        "wpackagist-plugin/page-links-to": "^3.3.5",
+        "wpackagist-plugin/reusable-blocks-extended": "^0.8",
+        "wpackagist-plugin/redirection": "^5.1.3",
+        "wpackagist-plugin/autodescription": "^4.2.2",
+        "wpackagist-plugin/simple-social-share-block": "1.0.0",
+        "wpackagist-plugin/wp-discourse": "^2.3.0",
         "scossar/wp-discourse-shortcodes": "dev-master",
-        "wpackagist-plugin/wp-rest-api-v2-menus":"^0.10",
-        "wpackagist-plugin/yikes-inc-easy-mailchimp-extender":"^6.8.5",
-        "wpackagist-plugin/amazon-s3-and-cloudfront":"^2.5.5",
+        "wpackagist-plugin/wp-rest-api-v2-menus": "^0.10",
+        "wpackagist-plugin/yikes-inc-easy-mailchimp-extender": "^6.8.5",
+        "wpackagist-plugin/amazon-s3-and-cloudfront": "^2.5.5",
+        "wpackagist-plugin/wp-mail-smtp": "^3.2.1",
         "debtcollective/wp-action-network-events": "dev-main",
         "debtcollective/dotorg-site-functionality": "dev-main",
         "debtcollective/dotorg-theme": "dev-main",
-        "wpackagist-plugin/wp-user-avatars":"^1.4.1",
-        "vlucas/phpdotenv":"^5.4.0"
+        "wpackagist-plugin/wp-user-avatars": "^1.4.1",
+        "vlucas/phpdotenv": "^5.4.0"
+    },
+    "require-dev": {
+        "wpackagist-plugin/user-switching": "^1.5.8"
     },
     "extra": {
         "installer-paths": {
