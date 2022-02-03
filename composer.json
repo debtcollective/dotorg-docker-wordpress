@@ -134,7 +134,6 @@
         "wpackagist-plugin/wp-discourse": "^2.3.0",
         "scossar/wp-discourse-shortcodes": "dev-master",
         "wpackagist-plugin/wp-rest-api-v2-menus": "^0.10",
-        "wpackagist-plugin/yikes-inc-easy-mailchimp-extender": "^6.8.5",
         "wpackagist-plugin/amazon-s3-and-cloudfront": "^2.5.5",
         "wpackagist-plugin/wp-mail-smtp": "^3.2.1",
         "debtcollective/wp-action-network-events": "dev-main",
