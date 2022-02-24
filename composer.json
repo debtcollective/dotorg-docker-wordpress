@@ -144,6 +144,7 @@
         "vlucas/phpdotenv": "^5.4.0"
     },
     "require-dev": {
+        "wpackagist-plugin/broken-link-checker": "^1.11.16",
         "wpackagist-plugin/user-switching": "^1.5.8"
     },
     "extra": {
