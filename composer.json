@@ -114,6 +114,19 @@
                     "reference": "main"
                 }
             }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "chatwoot/wp-plugin",
+                "version": "dev-main",
+                "type": "wordpress-plugin",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:chatwoot/wp-plugin.git",
+                    "reference": "main"
+                }
+            }
         }
     ],
     "require": {
@@ -123,6 +136,7 @@
         "wpackagist-plugin/block-manager": "^1.2.2",
         "debtcollective/block-visibility-pro": "dev-main",
         "wpackagist-plugin/block-visibility": "^2.3.0",
+        "chatwoot/wp-plugin": "dev-main",
         "wpackagist-plugin/contact-form-7": "^5.5.2",
         "wpackagist-plugin/contact-form-entries": "^1.2.7",
         "wpackagist-plugin/members": "^3.1.5",
@@ -151,6 +165,7 @@
         "installer-paths": {
             "wp-content/plugins/site-functionality/": ["debtcollective/dotorg-site-functionality"],
             "wp-content/themes/debtcollective/": ["debtcollective/dotorg-theme"],
+            "wp-content/themes/chatwoot/": ["chatwoot/wp-plugin"],
             "wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
             "wp-content/themes/{$name}/": ["type:wordpress-theme"]
         },
