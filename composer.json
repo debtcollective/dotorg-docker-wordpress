@@ -22,7 +22,7 @@
             "type": "package",
             "package": {
               "name": "advanced-custom-fields/advanced-custom-fields-pro",
-              "version": "5.10.2",
+              "version": "5.12",
               "type": "wordpress-plugin",
               "dist": {
                 "type": "zip",
@@ -130,9 +130,9 @@
         }
     ],
     "require": {
-        "advanced-custom-fields/advanced-custom-fields-pro": "^5.10.2",
         "wpackagist-plugin/codepress-admin-columns": "^4.3.2",
         "wpackagist-plugin/flexy-breadcrumb": "^1.1.4",
+        "advanced-custom-fields/advanced-custom-fields-pro": "^5.12",
         "wpackagist-plugin/block-manager": "^1.2.2",
         "debtcollective/block-visibility-pro": "dev-main",
         "wpackagist-plugin/block-visibility": "^2.3.0",
