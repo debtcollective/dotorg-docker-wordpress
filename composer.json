@@ -147,8 +147,6 @@
         "wpackagist-plugin/autodescription": "^4.2.2",
         "wpackagist-plugin/social-sharing-block": "^0.3.0",
         "wpackagist-plugin/svg-support": "^2.4",
-        "wpackagist-plugin/wp-discourse": "^2.3.0",
-        "scossar/wp-discourse-shortcodes": "dev-master",
         "wpackagist-plugin/wp-rest-api-v2-menus": "^0.10",
         "wpackagist-plugin/amazon-s3-and-cloudfront": "^2.5.5",
         "wpackagist-plugin/wp-mail-smtp": "^3.2.1",
