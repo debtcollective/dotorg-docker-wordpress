@@ -26,11 +26,11 @@ jobs:
       - checkout
       - aws-cli/setup:
           profile-name: wordpress_prod
-
       - run:
-          name: Deploy task with new version
+          name: Deploy over SSH
           command: |
-            aws ecs update-service --cluster $ECS_CLUSTER --service $ECS_SERVICE --force-new-deployment
+            scp -P $SSH_PORT -o StrictHostKeyChecking=accept-new composer.json $SSH_USER@$SSH_HOST_PROD:$SSH_PATH
+
 workflows:
   version: 2
   pipeline:
@@ -39,7 +39,7 @@ workflows:
           filters:
             branches:
               only: staging
-#       - deploy_prod:
-#           filters:
-#             branches:
-#               only: main
+      - deploy_prod:
+          filters:
+            branches:
+              only: master
