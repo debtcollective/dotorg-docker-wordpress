@@ -156,7 +156,7 @@
         "debtcollective/dotorg-site-functionality": "dev-main",
         "debtcollective/dotorg-theme": "dev-main",
         "vlucas/phpdotenv": "^5.4.0",
-        "automattic/jetpack": "^10.7"
+        "wpackagist-plugin/wordfence": "^7.5.8"
     },
     "require-dev": {
         "wpackagist-plugin/broken-link-checker": "^1.11.16",
