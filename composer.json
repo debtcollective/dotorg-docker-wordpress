@@ -156,7 +156,8 @@
         "debtcollective/dotorg-site-functionality": "dev-main",
         "debtcollective/dotorg-theme": "dev-main",
         "vlucas/phpdotenv": "^5.4.0",
-        "wpackagist-plugin/wordfence": "^7.5.8"
+        "wpackagist-plugin/wordfence": "^7.5.8",
+        "wpackagist-plugin/wp-youtube-lyte": "^1.7.19"
     },
     "require-dev": {
         "wpackagist-plugin/broken-link-checker": "^1.11.16",
