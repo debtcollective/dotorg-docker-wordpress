@@ -15,7 +15,7 @@ jobs:
       - run:
           name: Deploy over SSH
           command: |
-            scp -P $SSH_PORT -o StrictHostKeyChecking=accept-new composer.json $SSH_USER@$SSH_HOST_DEV:$SSH_PATH
+            scp -P $SSH_PORT -o StrictHostKeyChecking=accept-new composer.json $SSH_USER@$SSH_HOST_DEV:$SSH_DEV_PATH
   deploy_stage:
     executor: aws-cli/default
     environment:
