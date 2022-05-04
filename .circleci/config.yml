@@ -3,7 +3,7 @@ version: 2.1
 orbs:
   aws-cli: circleci/aws-cli@1.4.1
 jobs:
-  deploy_stage:
+  deploy_dev:
     executor: aws-cli/default
     environment:
       ECS_CLUSTER: test
