@@ -11,6 +11,19 @@ jobs:
     steps:
       - checkout
       - aws-cli/setup:
+          profile-name: wordpress_dev
+      - run:
+          name: Deploy over SSH
+          command: |
+            scp -P $SSH_PORT -o StrictHostKeyChecking=accept-new composer.json $SSH_USER@$SSH_HOST_DEV:$SSH_PATH
+  deploy_stage:
+    executor: aws-cli/default
+    environment:
+      ECS_CLUSTER: test
+      ECS_SERVICE: wordpress
+    steps:
+      - checkout
+      - aws-cli/setup:
           profile-name: wordpress_stage
       - run:
           name: Deploy over SSH
@@ -35,6 +48,10 @@ workflows:
   version: 2
   pipeline:
     jobs:
+      - deploy_dev:
+          filters:
+            branches:
+              only: development
       - deploy_stage:
           filters:
             branches:
