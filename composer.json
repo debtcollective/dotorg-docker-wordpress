@@ -88,6 +88,23 @@
         {
             "type": "package",
             "package": {
+                "name": "frnhr/simple-user-ordering",
+                "version": "dev-master",
+                "type": "wordpress-plugin",
+                "dist": {
+                    "type": "zip",
+                    "url": "https://github.com/frnhr/simple-user-ordering/archive/refs/heads/master.zip"
+                },
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:frnhr/simple-user-ordering.git",
+                    "reference": "master"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
                 "name": "scossar/wp-discourse-shortcodes",
                 "version": "dev-master",
                 "type": "wordpress-plugin",
@@ -152,6 +169,7 @@
         "wpackagist-plugin/amazon-s3-and-cloudfront": "^2.5.5",
         "wpackagist-plugin/wp-user-avatars": "^1.4.1",
         "wpackagist-plugin/wp-rest-api-v2-menus": "^0.10",
+        "frnhr/simple-user-ordering": "dev-master",
         "debtcollective/wp-action-network-events": "dev-main",
         "debtcollective/dotorg-site-functionality": "dev-main",
         "debtcollective/dotorg-theme": "dev-main",
