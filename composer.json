@@ -187,7 +187,6 @@
         "wpackagist-plugin/wp-user-avatars": "^1.4.1",
         "wpackagist-plugin/wp-rest-api-v2-menus": "^0.10",
         "frnhr/simple-user-ordering": "dev-master",
-        "debtcollective/wp-webhooks-pro": "dev-main",
         "debtcollective/dotorg-site-functionality": "dev-main",
         "debtcollective/dotorg-theme": "dev-main",
         "vlucas/phpdotenv": "^5.4.0",
