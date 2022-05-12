@@ -51,7 +51,7 @@ workflows:
       - deploy_dev:
           filters:
             branches:
-              only: development
+              only: events
       - deploy_stage:
           filters:
             branches:
