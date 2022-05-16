@@ -37,16 +37,16 @@
         {
             "type": "package",
             "package": {
-                "name": "debtcollective/wp-action-network-events",
+                "name": "debtcollective/dc-events-manager",
                 "version": "dev-main",
                 "type": "wordpress-plugin",
                 "dist": {
                     "type": "zip",
-                    "url": "https://github.com/debtcollective/wp-action-network-events/archive/refs/heads/main.zip"
+                    "url": "https://github.com/debtcollective/dc-events-manager/archive/refs/heads/main.zip"
                 },
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:debtcollective/wp-action-network-events.git",
+                    "url": "git@github.com:debtcollective/dc-events-manager.git",
                     "reference": "main"
                 }
             }
@@ -170,13 +170,15 @@
         "wpackagist-plugin/wp-user-avatars": "^1.4.1",
         "wpackagist-plugin/wp-rest-api-v2-menus": "^0.10",
         "frnhr/simple-user-ordering": "dev-master",
-        "debtcollective/wp-action-network-events": "dev-main",
         "debtcollective/dotorg-site-functionality": "dev-main",
         "debtcollective/dotorg-theme": "dev-main",
         "vlucas/phpdotenv": "^5.4.0",
         "wpackagist-plugin/wordfence": "^7.5.8",
         "wpackagist-plugin/wp-youtube-lyte": "^1.7.19",
-        "wpackagist-plugin/dearpdf-lite": "^1.1"
+        "wpackagist-plugin/dearpdf-lite": "^1.1",
+        "wpackagist-plugin/events-manager": "^5.12.1",
+        "wpackagist-plugin/events-manager-zoom": "^1.5",
+        "debtcollective/dc-events-manage": "dev-main"
     },
     "require-dev": {
         "wpackagist-plugin/broken-link-checker": "^1.11.16",
