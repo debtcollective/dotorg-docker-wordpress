@@ -178,7 +178,7 @@
         "wpackagist-plugin/dearpdf-lite": "^1.1",
         "wpackagist-plugin/events-manager": "^5.12.1",
         "wpackagist-plugin/events-manager-zoom": "^1.5",
-        "debtcollective/dc-events-manage": "dev-main"
+        "debtcollective/dc-events-manager": "dev-main"
     },
     "require-dev": {
         "wpackagist-plugin/broken-link-checker": "^1.11.16",
