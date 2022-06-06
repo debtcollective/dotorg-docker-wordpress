@@ -37,6 +37,23 @@
         {
             "type": "package",
             "package": {
+                "name": "debtcollective/wp-webhooks-pro",
+                "version": "dev-main",
+                "type": "wordpress-plugin",
+                "dist": {
+                    "type": "zip",
+                    "url": "https://github.com/debtcollective/wp-webhooks-pro/archive/refs/heads/main.zip"
+                },
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:debtcollective/wp-webhooks-pro.git",
+                    "reference": "main"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
                 "name": "debtcollective/dc-events-manager",
                 "version": "dev-main",
                 "type": "wordpress-plugin",
@@ -172,6 +189,7 @@
         "frnhr/simple-user-ordering": "dev-master",
         "debtcollective/dotorg-site-functionality": "dev-main",
         "debtcollective/dotorg-theme": "dev-main",
+        "debtcollective/wp-webhooks-pro": "dev-main",
         "vlucas/phpdotenv": "^5.4.0",
         "wpackagist-plugin/wordfence": "^7.5.8",
         "wpackagist-plugin/wp-youtube-lyte": "^1.7.19",
