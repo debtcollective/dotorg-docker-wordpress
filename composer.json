@@ -208,7 +208,7 @@
         "installer-paths": {
             "wp-content/plugins/site-functionality/": ["debtcollective/dotorg-site-functionality"],
             "wp-content/themes/debtcollective/": ["debtcollective/dotorg-theme"],
-            "wp-content/themes/chatwoot/": ["chatwoot/wp-plugin"],
+            "wp-content/plugins/chatwoot/": ["chatwoot/wp-plugin"],
             "wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
             "wp-content/themes/{$name}/": ["type:wordpress-theme"]
         },
