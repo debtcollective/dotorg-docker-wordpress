@@ -178,10 +178,11 @@
         "wpackagist-plugin/dearpdf-lite": "^1.1",
         "wpackagist-plugin/events-manager": "^5.12.1",
         "wpackagist-plugin/events-manager-zoom": "^1.5",
-        "debtcollective/dc-events-manage": "dev-main"
+        "debtcollective/dc-events-manager": "dev-main"
+        "wpackagist-plugin/google-website-translator": "^1.4",
+        "wpackagist-plugin/beautiful-link-preview": "^1.4"
     },
     "require-dev": {
-        "wpackagist-plugin/broken-link-checker": "^1.11.16",
         "wpackagist-plugin/user-switching": "^1.5.8",
         "wpackagist-plugin/wp-log-viewer": "^1.2.1",
         "wpackagist-plugin/wp-crontrol": "^1.12.0"
