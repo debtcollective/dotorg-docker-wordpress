@@ -84,6 +84,19 @@ docker volume rm dotorg-docker_wordpress_dbdata
 
 ## Pull latest DB
 
+### M1 Macs 
+
+If you are experiencing trouble and `docker compose up` spits outputs:
+`no matching manifest for linux/arm64/v8 in the manifest list entries`
+
+create a file in your project root named `docker-compose.override.yml` and include these entries:
+
+```
+services:
+  db:
+    platform: linux/amd64
+```
+
 ### On Mac
 
 `brew install mysql@5.7`
