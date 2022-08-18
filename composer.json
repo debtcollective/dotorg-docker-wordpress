@@ -189,14 +189,17 @@
         "wpackagist-plugin/wp-user-avatars": "^1.4.1",
         "wpackagist-plugin/wp-rest-api-v2-menus": "^0.10",
         "frnhr/simple-user-ordering": "dev-master",
+        "debtcollective/wp-webhooks-pro": "dev-main",
         "debtcollective/dotorg-site-functionality": "dev-main",
         "debtcollective/dotorg-theme": "dev-main",
-        "debtcollective/wp-webhooks-pro": "dev-main",
+        "debtcollective/dc-events-manager": "dev-main",
         "vlucas/phpdotenv": "^5.4.0",
         "wpackagist-plugin/wordfence": "^7.5.8",
         "wpackagist-plugin/wp-youtube-lyte": "^1.7.19",
         "wpackagist-plugin/dearpdf-lite": "^1.1",
         "debtcollective/dc-events-manager": "dev-main"
+        "wpackagist-plugin/events-manager": "^5.12.1",
+        "wpackagist-plugin/events-manager-zoom": "^1.5"
     },
     "require-dev": {
         "wpackagist-plugin/broken-link-checker": "^1.11.16",
