@@ -25,6 +25,7 @@ services:
     environment:
       PMA_HOST: db
       MYSQL_ROOT_PASSWORD: "${DB_USER_PASSWORD}"
+      UPLOAD_LIMIT: 64M
     networks:
       - wpsite
   wordpress:
