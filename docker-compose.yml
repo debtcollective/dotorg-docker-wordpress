@@ -25,6 +25,7 @@ services:
     environment:
       PMA_HOST: db
       MYSQL_ROOT_PASSWORD: "${DB_USER_PASSWORD}"
+      UPLOAD_LIMIT: 64M
     networks:
       - wpsite
   wordpress:
@@ -39,6 +40,7 @@ services:
       - ./config/php.conf.ini:/usr/local/etc/php/conf.d/conf.ini
       - ./wp-app:/var/www/html
     environment:
+      UPLOAD_LIMIT: 64M
       WORDPRESS_DB_HOST: db:3306
       WORDPRESS_DB_NAME: "${DB_NAME}"
       WORDPRESS_DB_USER: wordpress
