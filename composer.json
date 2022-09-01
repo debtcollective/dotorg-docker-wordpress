@@ -197,7 +197,7 @@
         "wpackagist-plugin/wordfence": "^7.5.8",
         "wpackagist-plugin/wp-youtube-lyte": "^1.7.19",
         "wpackagist-plugin/dearpdf-lite": "^1.1",
-        "debtcollective/dc-events-manager": "dev-main"
+        "debtcollective/dc-events-manager": "dev-main",
         "wpackagist-plugin/events-manager": "^5.12.1",
         "wpackagist-plugin/events-manager-zoom": "^1.5"
     },
