@@ -73,6 +73,7 @@ node_modules/
 !config
 !.git
 !composer.json
+!composer.lock
 !docker-compose.yml
 !Dockerfile
 !env.example
