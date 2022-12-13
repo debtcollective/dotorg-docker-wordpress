@@ -22,7 +22,7 @@
             "type": "package",
             "package": {
               "name": "advanced-custom-fields/advanced-custom-fields-pro",
-              "version": "5.12",
+              "version": "6.0.5",
               "type": "wordpress-plugin",
               "dist": {
                 "type": "zip",
@@ -37,16 +37,33 @@
         {
             "type": "package",
             "package": {
-                "name": "debtcollective/wp-action-network-events",
+                "name": "debtcollective/wp-webhooks-pro",
                 "version": "dev-main",
                 "type": "wordpress-plugin",
                 "dist": {
                     "type": "zip",
-                    "url": "https://github.com/debtcollective/wp-action-network-events/archive/refs/heads/main.zip"
+                    "url": "https://github.com/debtcollective/wp-webhooks-pro/archive/refs/heads/main.zip"
                 },
                 "source": {
                     "type": "git",
-                    "url": "git@github.com:debtcollective/wp-action-network-events.git",
+                    "url": "git@github.com:debtcollective/wp-webhooks-pro.git",
+                    "reference": "main"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "debtcollective/dc-events-manager",
+                "version": "dev-main",
+                "type": "wordpress-plugin",
+                "dist": {
+                    "type": "zip",
+                    "url": "https://github.com/debtcollective/dc-events-manager/archive/refs/heads/main.zip"
+                },
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:debtcollective/dc-events-manager.git",
                     "reference": "main"
                 }
             }
@@ -147,36 +164,38 @@
         }
     ],
     "require": {
-        "wpackagist-plugin/codepress-admin-columns": "^4.3.2",
-        "advanced-custom-fields/advanced-custom-fields-pro": "^5.12",
+        "wpackagist-plugin/codepress-admin-columns": "^4.4.5",
+        "advanced-custom-fields/advanced-custom-fields-pro": "^5.12.2",
         "wpackagist-plugin/block-manager": "^1.2.2",
-        "wpackagist-plugin/block-visibility": "^2.3.0",
+        "wpackagist-plugin/block-visibility": "^2.4.2",
         "debtcollective/block-visibility-pro": "dev-main",
         "chatwoot/wp-plugin": "dev-main",
-        "wpackagist-plugin/contact-form-7": "^5.5.2",
-        "wpackagist-plugin/contact-form-entries": "^1.2.7",
-        "wpackagist-plugin/flexy-breadcrumb": "^1.1.4",
-        "wpackagist-plugin/cookie-law-info": "^2.1.1",
-        "wpackagist-plugin/members": "^3.1.5",
-        "wpackagist-plugin/page-links-to": "^3.3.5",
-        "wpackagist-plugin/redirection": "^5.1.3",
-        "wpackagist-plugin/reusable-blocks-extended": "^0.8",
+        "wpackagist-plugin/contact-form-7": "^5.5.6.1",
+        "wpackagist-plugin/contact-form-entries": "^1.2.8",
+        "wpackagist-plugin/flexy-breadcrumb": "^1.2.1",
+        "wpackagist-plugin/cookie-law-info": "^2.1.2",
+        "wpackagist-plugin/members": "^3.1.7",
+        "wpackagist-plugin/page-links-to": "^3.3.6",
+        "wpackagist-plugin/redirection": "^5.2.3",
+        "wpackagist-plugin/reusable-blocks-extended": "^0.9",
         "wpackagist-plugin/google-site-kit": "^1.68.0",
-        "wpackagist-plugin/social-sharing-block": "^0.3.0",
-        "wpackagist-plugin/svg-support": "^2.4",
-        "wpackagist-plugin/autodescription": "^4.2.2",
-        "wpackagist-plugin/wp-mail-smtp": "^3.2.1",
+        "wpackagist-plugin/social-sharing-block": "^0.4.0",
+        "wpackagist-plugin/svg-support": "^2.4.2",
+        "wpackagist-plugin/autodescription": "^4.2.5",
+        "wpackagist-plugin/wp-mail-smtp": "^3.3.0",
         "wpackagist-plugin/amazon-s3-and-cloudfront": "^2.5.5",
         "wpackagist-plugin/wp-user-avatars": "^1.4.1",
         "wpackagist-plugin/wp-rest-api-v2-menus": "^0.10",
         "frnhr/simple-user-ordering": "dev-master",
-        "debtcollective/wp-action-network-events": "dev-main",
         "debtcollective/dotorg-site-functionality": "dev-main",
         "debtcollective/dotorg-theme": "dev-main",
         "vlucas/phpdotenv": "^5.4.0",
         "wpackagist-plugin/wordfence": "^7.5.8",
         "wpackagist-plugin/wp-youtube-lyte": "^1.7.19",
         "wpackagist-plugin/dearpdf-lite": "^1.1",
+        "debtcollective/dc-events-manager": "dev-main",
+        "wpackagist-plugin/events-manager": "^6.1.5",
+        "wpackagist-plugin/events-manager-zoom": "^1.5"
         "wpackagist-plugin/google-website-translator": "^1.4",
         "wpackagist-plugin/beautiful-link-preview": "^1.4"
     },
@@ -189,7 +208,7 @@
         "installer-paths": {
             "wp-content/plugins/site-functionality/": ["debtcollective/dotorg-site-functionality"],
             "wp-content/themes/debtcollective/": ["debtcollective/dotorg-theme"],
-            "wp-content/themes/chatwoot/": ["chatwoot/wp-plugin"],
+            "wp-content/plugins/chatwoot/": ["chatwoot/wp-plugin"],
             "wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
             "wp-content/themes/{$name}/": ["type:wordpress-theme"]
         },
