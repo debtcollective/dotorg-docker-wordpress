@@ -165,7 +165,7 @@
     ],
     "require": {
         "wpackagist-plugin/codepress-admin-columns": "^4.4.5",
-        "advanced-custom-fields/advanced-custom-fields-pro": "^5.12.2",
+        "advanced-custom-fields/advanced-custom-fields-pro": "^6.0.5",
         "wpackagist-plugin/block-manager": "^1.2.2",
         "wpackagist-plugin/block-visibility": "^2.4.2",
         "debtcollective/block-visibility-pro": "dev-main",
