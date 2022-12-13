@@ -196,6 +196,8 @@
         "debtcollective/dc-events-manager": "dev-main",
         "wpackagist-plugin/events-manager": "^6.1.5",
         "wpackagist-plugin/events-manager-zoom": "^1.5"
+        "wpackagist-plugin/google-website-translator": "^1.4",
+        "wpackagist-plugin/beautiful-link-preview": "^1.4"
     },
     "require-dev": {
         "wpackagist-plugin/user-switching": "^1.5.8",
