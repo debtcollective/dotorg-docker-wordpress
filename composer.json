@@ -197,7 +197,14 @@
         "wpackagist-plugin/events-manager": "^6.1.5",
         "wpackagist-plugin/events-manager-zoom": "^1.5",
         "wpackagist-plugin/google-website-translator": "^1.4",
-        "wpackagist-plugin/beautiful-link-preview": "^1.4"
+        "wpackagist-plugin/beautiful-link-preview": "^1.4",
+        "wpackagist-plugin/woocommerce":"^8.2.1",
+        "wpackagist-plugin/woo-gutenberg-products-block":"^11.5.0",
+        "wpackagist-plugin/download-now-for-woocommerce":"^3.5.7.1",
+        "wpackagist-plugin/variation-swatches-woo":"^1.0.7",
+        "wpackagist-plugin/woocommerce-payments":"^6.7.1",
+        "wpackagist-plugin/woocommerce-gateway-stripe":"^7.6.2",
+        "wpackagist-plugin/yith-woocommerce-ajax-navigation":"^4.27.0"
     },
     "require-dev": {
         "wpackagist-plugin/user-switching": "^1.5.8",
